@@ -1,0 +1,20 @@
+
+.dropdown {
+    display: flex;
+    margin-left: 50px;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.item-box {
+   text-align: left;
+   padding-right: 50px;
+}
+
+.item-title {
+    display: flex;
+    align-items: center;
+}
+.item-list{
+
+}
