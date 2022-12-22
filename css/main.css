@@ -1,14 +1,15 @@
 
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
 @import url(dropdown.css);
 
 /* COMMON */
 
 body {
     font-family: 'Mulish', sans-serif;
-    line-height: 1.5;
+    line-height: 0.75;
     min-width: 1000px;
+    
 }
 a {
     text-decoration: none;
@@ -21,39 +22,43 @@ a:hover, a:active {
     outline: none;
 
 }
-.inner {
-    margin-right: 50px;
-}
 .invisible {
     display: none;
 }
-
+.underline {
+    
+}
+.underline:hover {
+    border-bottom: 5px solid;
+}
 
 /* HEADER */
 
 header {
     box-sizing: border-box;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    border-bottom: 1px solid red;
 }
 
-header .promo {
+.promo {
     background-color: rgb(0,0,0);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
 }
-header .promo-item {
+.promo-item {
     margin: 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header .promo-item a {
+.promo-item a {
     color: rgb(255,255,255);
     font-size: 12px;
 }
-header .promo span {
+.promo span {
     color:rgb(221,83,48);
 }
 
@@ -66,12 +71,12 @@ header .promo span {
     padding-bottom: 8px;
     margin-left: 50px;
 }
-header .m-logo {
+header .header-center .m-logo {
+    
     width: 120px;
     height: 30px;
     background-image: url(sp_20cm.png);
-    background-repeat: no-repeat;
-    background-position: ;
+    /* background-position: 0 -230px ; */
     background-color: black;
     margin-left: 15px;
 }
@@ -84,6 +89,7 @@ header .user {
 header .user div a {
     margin-left: 13px;
     display: flex;
+    align-items: center;
 
 }
 header .user i {
@@ -94,6 +100,9 @@ header .user i {
 }
 header .user span {
     margin-left:5px;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
 }
 header .header-nav {
     font-size: 50px;
@@ -102,10 +111,29 @@ header .header-nav {
     box-sizing: border-box;
     height: 80px;
     padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
-.header-nav i {
-    margin-right: 15px;
+.header .header-nav-list {
+    display: flex;
+    justify-content: left;
+}
+.header-nav span a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-bottom: -10px;
+    margin: 0 10px;
+    font-weight: 900;
+    font-size: 36px;
+}
 
+.header-nav>span{
+    margin-right: 15px;
+    font-weight:900 ;
+    font-size: 47px;
+}
+.header-nav>span:hover {
+    cursor: auto;
 }
 .nav {
     height: 35.5px;
@@ -119,6 +147,16 @@ header .header-nav {
     padding: 8px 0;
     display: flex;
     flex-wrap: wrap;
+}
+.nav-left span a {
+    display: inline-block;
+    margin: 0 7px;
+    padding: 9px 0;
+    font-weight: 700;
+}
+.nav-left .nav-btm-set {
+    display: flex;
+    flex-direction: column;
 }
 .nav-right {
     margin-right: 22px;
@@ -139,7 +177,58 @@ header .header-nav {
 .nav-right span {
     margin-right: 15px;
 }
-nav span a{
-    margin: 0 7px;
-    padding: 8px 0;
+.nav-right span a {
+    display: inline-block;
+    padding: 9px 0;
+    font-weight: 100;
+    
+}
+
+
+
+/*MAIN-dropdown*/
+.dropdown {
+    height: 330px;
+}
+.item-box {
+    background-color: red;
+    width: 103px;
+    margin: 0 30px 40px 30px;
+}
+.item-title {
+    padding: 7px 15px 0px 15px;
+
+}
+.item-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+.item-list li a{
+    display:inline-block;
+    padding: 6px 0px ;
+}
+
+/*MAIN-card*/
+.card {
+
+}
+.card img{
+
+}
+.card div {
+
+}
+.card button {
+
+}
+.card button a {
+
+} 
+.card button span {
+
+}
+.card button i{
+
 }
